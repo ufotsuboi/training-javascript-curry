@@ -9,6 +9,22 @@
  *   //=> 6
  */
 
-const curriedSum = () => {};
+const curriedSum = (a, b, c) => {
+  if (c === undefined) {
+    if (b === undefined) {
+      return (x, y) => {
+        if (y === undefined) {
+          return z => a + x + z;
+        } else {
+          return a + x + y;
+        }
+      };
+    } else {
+      return z => a + b + z;
+    }
+  } else {
+    return a + b + c;
+  }
+};
 
 module.exports = curriedSum;

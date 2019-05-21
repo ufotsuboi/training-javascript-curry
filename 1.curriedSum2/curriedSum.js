@@ -9,6 +9,12 @@
  *   //=> 3
  */
 
-const curriedSum = () => {};
+const curriedSum = (a, b) => {
+  if (b === undefined) {
+    return x => a + x;
+  } else {
+    return a + b;
+  }
+};
 
 module.exports = curriedSum;

@@ -8,6 +8,19 @@
  *   //=> 10
  */
 
-const curry = () => {};
+const curry = func => {
+  const partial = (store_args = []) => {
+    return (...args) => {
+      const new_args = store_args.concat(args);
+      if (new_args.length >= func.length) {
+        return func(...new_args);
+      } else {
+        return partial(new_args);
+      }
+    };
+  };
+
+  return partial();
+};
 
 module.exports = curry;
