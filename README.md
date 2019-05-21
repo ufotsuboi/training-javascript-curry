@@ -7,12 +7,17 @@ $ npm i
 $ npm test
 ```
 
-## 1. カリー化された関数を実装
+## 1. 2 つの数字の合計値を返すカリー化された関数を実装
 
-- `1.curriedSum/curriedSum.js` を実装してください。
-- `$ npm test -- 1.curriedSum` が通れば OK です。
+- `1.curriedSum2/curriedSum.js` を実装してください。
+- `$ npm test -- 1.curriedSum2` が通れば OK です。
 
-## 2. カリー化関数を実装
+## 2. 3 つの数字の合計値を返すカリー化された関数を実装
 
-- `2.curry/curry.js` を実装してください。
-- `$ npm test -- 2.curry` が通れば OK です。
+- `2.curriedSum3/curriedSum.js` を実装してください。
+- `$ npm test -- 2.curriedSum3` が通れば OK です。
+
+## 3. カリー化関数を実装
+
+- `3.curry/curry.js` を実装してください。
+- `$ npm test -- 3.curry` が通れば OK です。
